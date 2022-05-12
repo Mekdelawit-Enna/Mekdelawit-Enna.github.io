@@ -1,0 +1,48 @@
+.div-header{
+    background-color: cyan;
+    height: 50px;
+}
+.column1{
+    height: 200px;
+    background-color: darkgray;
+
+}
+.menu{
+    background-color: darkgreen;
+    color: white;
+    height: 35px;
+   
+     
+}
+.bord{
+    width: fit-content;
+
+    border-right: 1px solid black;
+}
+.column2{
+    height: 200px;
+    background-color: lightslategray;
+}
+.column3{
+    height: 200px;
+    background-color: gainsboro;
+}
+.footer{
+    height: 50px;
+    background-color: darkgreen;
+}
+@media (max-width: 800px) {
+    .column1 {
+      flex: 50%;
+      order: 1;
+    }
+    .column3
+    {
+        flex: 50%;
+        order: 2;
+    }
+    .column2{
+        flex: 100%;
+        order: 3;
+    }
+  }

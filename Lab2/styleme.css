@@ -1,0 +1,77 @@
+Shortcuts simplify My Drive … 
+In the coming weeks, items in more than one folder will be replaced by shortcuts. Access to files and folders won't change.Learn more
+styleme.css
+Who has access
+A
+System properties
+Type
+Style Sheet
+Size
+685 bytes
+Storage used
+685 bytes
+Location
+Lab1
+Owner
+Asma Aiouez
+Modified
+Feb 27, 2022 by Asma Aiouez
+Opened
+7:57 AM by me
+Created
+Feb 27, 2022 with ZIP Extractor
+No description
+Viewers can download
+body{
+    background-color: cornsilk;
+}
+
+#legend  {
+    border-bottom: 1px solid gray;
+}
+h1{
+    color: maroon;
+}
+h2{
+    color: red;
+}
+
+p{
+    font-family: Arial;
+    font-size: 100%;
+}
+p:first-letter{
+    font-size: 150%;
+}
+
+table tr td{
+    width: 100px;
+    text-align: center;
+}
+ol{
+     counter-reset:item 4; 
+}
+ol li {
+    counter-increment:item -1;
+    list-style-type:none;
+   
+}
+ol li:before {
+    content:counter(item) ". ";
+}
+table > caption{
+    color: green;
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+dl{
+     margin-left:20px;
+}
+dt{
+    color:sandybrown;
+}

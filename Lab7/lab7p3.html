@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab 6 part 3
+        </title>
+        <link <!-- CSS only -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <style>
+            .navbar-custom{
+                background-color: #35A6E7;
+
+            }
+            .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+                border-right: 2px solid #FFF;
+            }
+            .top-buffer{
+                margin-top: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-dark ">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market:::SRM System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suppliers</a>
+                    </li>
+    
+    
+                </ul>
+                <div>
+                    <a class="navbar-brand" href="#"> Hello!</a>
+    
+                    <button type="submit" class="btn">Sign Out</button>
+                </div>
+            </div>
+        </nav>
+          <div class="container">
+             
+              <form class="form">
+                  <div>
+                   <label> <h1> New Product Form</h1></label>
+                  </div>
+                  <div class="row">
+
+                  
+                        <div class="col-md-6">
+                                <label class="form-label">Product Number</label>
+                                <input class="form-control" type="text">
+                                <label class="form-label">Name</label>
+                                <input class="form-control" type="text">
+                                <label class="form-label">Unit Price</label>
+                                <input class="form-control" type="text" placeholder="0.0">
+                        </div>
+                    
+                        <div class="col-md-6 row">
+                            <label class="form-label">Quantity in store</label>
+                            <input class="form-control" type="text" placeholder="0">
+                            <label class="form-label">Supplier</label>
+                            <select class="form-control">
+                                <option class="form-control">Select a supplier</option>
+                                <option class="form-control">abc</option>
+                            </select>
+                            <label class="form-label">Date supplied</label>
+                            <input class="form-control" id="dateP" pattern="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" type="text" placeholder="yyyy-mm-dd">
+                            <small id="check">Enter a valid date</small>
+                        </div>                
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-8">
+                            
+                        </div>
+                        <div class="row col-md-4">
+                            <div class="col-md-3">
+                                <button class="btn btn-outline-primary">Reset</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-outline-danger float-right">Cancel</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-outline-info float-right">Add Product</button>
+                            </div>
+                            
+                        </div>  
+                    </div>
+                    
+              </form>
+          </div>
+        
+    </body>
+</html>

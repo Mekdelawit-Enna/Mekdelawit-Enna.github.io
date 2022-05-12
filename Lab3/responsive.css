@@ -1,0 +1,96 @@
+body{
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-rows: 9% 5% 73% 9%;
+    
+
+}
+.header{
+    /* display: flex; */
+    background-color: cyan;
+    width: 100%;
+    text-align: center;
+    
+    /* justify-content: center; */
+   
+}
+
+#header-h{
+    position: relative;
+    align-self: center;
+}
+.menu{
+    display: flex;
+    background-color: darkgreen;
+    
+    
+}
+
+.menu span{
+     
+    flex-direction: row;
+    font-size: 100%;
+    padding-right: 1%;
+    color: white;
+    padding-top: 1%;
+    margin-left: 1%;
+
+    border-right: 2px solid #333;
+
+    
+}
+.columns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column1{
+    background-color: darkgray;
+    width: 33.3%;
+}
+.column2{
+    background-color: lightslategray;
+    width: 33.3%;
+    
+}
+.column3{
+    background-color: gainsboro;
+    width: 33.4%;
+}
+.columns h1{
+    margin-left: 5%;
+    font-size: 100%;
+}
+.footer{
+    
+    display: flex;
+    background-color:darkgreen ;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.footer-f{
+    position: relative;
+    align-self: center;
+    
+}
+@media (max-width: 600px) {
+    .column1 {
+      flex: 50%;
+      order: 1;
+    }
+    .column3
+    {
+        flex: 50%;
+        order: 2;
+    }
+    .column2{
+        flex: 100%;
+        order: 3;
+    }
+  }
+

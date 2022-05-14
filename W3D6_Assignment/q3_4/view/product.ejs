@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("header.ejs") %>
+<body>
+    <a href="./shoppingcart">View Shopping Cart</a>
+    <ol>
+    
+        <% products.forEach((i)=> {%><li><label for="name">Product Name :</label> <%=i.name%> <br> <label for="price">Price : </label> <%=i.price%> <br> <label for="description">Description : </label> <%=i.description%> <br><label for="id">Product ID : </label><%=i.id%>  </li> <br> <button>Add to Cart</button> <br><br><%}) %>
+    
+    </ol>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("header.ejs") %>
+<body>
+    <a href="./shoppingcart">View Shopping Cart</a>
+    <ul>
+    
+        <% products.forEach((i)=> {%><li><label for="name">Product Name :</label> <%=i.name%> <br> 
+            <label for="price">Price : </label> <%=i.price%> <br>
+             <label for="description">Description : </label> <%=i.description%> <br>
+             <label for="id">Product ID : </label><%=i.id%> <br>
+             <img id="productimg" src=<%=i.url%> alt="Car images"><br> <br>
+              <form action="/addtocart" method="POST">
+                  <input type="hidden" name= "name" value="<%=i.name%>">
+                  <input type="hidden" name= "price" value="<%=i.price%>">
+                  <button id ="addcartbtn"type="submit"> Add to cart</button> 
+              </form> </li><br> <%}) %>
+    
+    </ul>
+    
+</body>
+</html>

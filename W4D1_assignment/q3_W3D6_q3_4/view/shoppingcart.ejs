@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("header.ejs") %>
+<body>
+    <a href="/">Continue Shopping</a>
+    
+    <ul id="ulshoppingcart">
+    
+        <li>
+            <img src= <%=cartProducts.url%> alt="Car image"><br><br>
+            <label for="name">Name :</label> <%=cartProducts.Name%> <br> 
+            <label for="price">Price</label> <%=cartProducts.Price%> <br>
+             <label for="quantity">Quantity : </label> <%=cartProducts.Quantity%> <br><br> 
+             <form action="/remove" method="POST">
+                 <input type="hidden" name = "prodName" value="<%=cartProducts.Name%>">
+                 <button id = 'rmvbtn' type="submit">Remove from cart</button>
+             </form>   <br>
+             
+        
+    </ul>
+    
+</body>
+</html>
+
+    
+ 

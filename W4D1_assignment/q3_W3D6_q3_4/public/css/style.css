@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+#addcartbtn , #rmvbtn
+{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+img
+{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+
+}
+
+#ulshoppingcart
+{
+    list-style: none;
+}
+
+#prdli{
+    padding: 5px;
+    display: inline;
+}

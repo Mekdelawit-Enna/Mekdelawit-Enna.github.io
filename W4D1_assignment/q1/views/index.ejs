@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+</head>
+<body>
+    <h2>Add Cookie</h2>
+    <form action="/addcookie" method="post">
+        <input type="text" name="key">
+        <input type="text" name="value">
+        <input type="submit" value="Add Cookie">
+    </form> <br><br><br><br>
+
+    <h3>Added Cookies</h3>
+    <table>
+        <th>
+            Key
+        </th>
+        <th>
+            value
+        </th>
+        <% for(i in items){ %>
+            <tr>
+                <td><%= i %></td>
+                <td><%= items[i] %></td>
+            </tr>
+
+        <%}%>
+       
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header.ejs") %>
+    <p>Shopping Cart</p>
+    <p><h3>Total number of Items in the cart is, <%= cart.length%></h3></p>
+    <ul>
+        <% if(!(cart.length == 0)){ %>
+            <% for(x in cart){%>
+                <ul>
+                   <li>Name: <%= cart[x].name %></li>
+                   <li>Price: <%= cart[x].price %>$</li>
+                   <li>Quantity: <%= cart[x].quantity %></li>
+                   
+                </ul>
+               </br >
+                <form action="/remove" method="post">
+                    <input type="hidden" name = "name" value="<%= cart[x].name %>">
+                   <input type="submit" value="Remove from cart">
+               </form>
+                 </br >
+               <%} %>
+            <%} else{ %>
+                <h3>Cart is Empty</h3>
+            <%}%>
+
+        
+        
+        
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/products.js" type="text/javaScript"></script>
+</head>
+<body>
+    <%- include("header.ejs") %>
+    <p>Products</p>
+    <span id="msg"></span>
+    <ul>
+        <% product.forEach((x)=>{%>
+         <ul>
+            <li>Name: <%= x.name %></li>
+            <li>Id: <%= x.id %></li>
+            <li>Description: <%= x.description%></li>
+            <li>Price: <%= x.price%></li>
+            
+         </ul>
+        </br >
+    </ul>
+         <!-- <form id="frm">
+            <input type="hidden" id="itemN" name="name" value="<%= x.name %>">
+            <input type="hidden" id="itemP" name="price" value="<%= x.price %>">
+            <input type="submit" id="sub" value="Add to cart">
+            <span id="msg"></span>
+           
+        </form> -->
+        <form method="POST">
+            <input type="hidden" id="prodName" name="prodName" value="<%=x.name %>">
+            <input type="hidden" id="prodPrice" name="prodPrice" value="<%=x.price %>">
+            <input type="submit" value="Add to Cart"/>
+        </form>
+          </br >
+        <%}) %>
+        
+    
+    
+</body>
+</html>
